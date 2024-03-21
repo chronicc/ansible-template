@@ -1,0 +1,9 @@
+ansible
+ansible-core<2.16.0
+ansible-lint
+molecule
+molecule-plugins
+python-vagrant
+pywinrm
+requests-credssp
+testinfra

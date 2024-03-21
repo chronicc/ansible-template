@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# mise description="Install project dependencies"
+
+mise run pip:install

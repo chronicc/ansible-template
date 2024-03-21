@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# mise description="Upgrade python requirements"
+
+pip install --upgrade pip
+pip install --upgrade --requirement=requirements.txt
+pip freeze > requirements.lock
+
+if [ -f requirements-dev.txt ]
+then
+    pip install --upgrade --requirement=requirements.txt --requirement=requirements-dev.txt
+    pip freeze > requirements-dev.lock
+fi

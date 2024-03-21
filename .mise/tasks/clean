@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# mise description="Reset the project to a clean state"
+
+rm -rf .pytest_cache
+rm -rf .venv
+find -iname "*.pyc" -delete

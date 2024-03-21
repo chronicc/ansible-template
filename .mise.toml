@@ -1,0 +1,9 @@
+[env]
+'_'.python.venv.create = true
+'_'.python.venv.path = ".venv"
+
+[tools]
+python = "3.12"
+
+[settings]
+experimental = true

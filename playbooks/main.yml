@@ -1,0 +1,10 @@
+---
+- name: Main Ansible Playbook
+  hosts: all
+  gather_facts: true
+  vars:
+    msg: "Hello World"
+  tasks:
+    - name: Display Hello World
+      ansible.builtin.debug:
+        msg: "{{ msg }}"

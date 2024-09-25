@@ -21,6 +21,5 @@
 !playbooks/
 !playbooks/main.yml
 !README.md
-!requirements.lock
 !requirements.txt
 !requirements.yml

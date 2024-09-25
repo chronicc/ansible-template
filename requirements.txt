@@ -1,5 +1,5 @@
 ansible
-ansible-core<2.16.0
+ansible-core
 ansible-lint
 molecule
 molecule-plugins

@@ -1,12 +1,18 @@
 #!/usr/bin/env bash
 # mise description="Install python requirements"
 
+if [ -f requirements.lock ]
+then
+    pip install --requirement=requirements.lock
+fi
+
 if [ -f requirements-dev.lock ]
 then
     pip install --requirement=requirements-dev.lock
-elif [ -f requirements.lock ]
+fi
+
+if [ ! -f requirements.lock ] && [ ! -f requirements-dev.lock ]
 then
-    pip install --requirement=requirements.lock
-else
-    echo "No requirements file found. Please run 'mise run pip:upgrade' to generate one."
+    echo "Initial run detected. Setting up requirements."
+    mise run pip:upgrade
 fi

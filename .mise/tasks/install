@@ -1,5 +1,3 @@
 #!/usr/bin/env bash
 # mise description="Install project dependencies"
-
-mise run pip:install
-mise run ansible:install
+# mise depends=["pip:install", "ansible:install"]

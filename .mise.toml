@@ -4,6 +4,3 @@
 
 [tools]
 python = "3.12"
-
-[settings]
-experimental = true

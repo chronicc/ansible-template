@@ -2,3 +2,4 @@
 # mise description="Install project dependencies"
 
 mise run pip:install
+mise run ansible:install

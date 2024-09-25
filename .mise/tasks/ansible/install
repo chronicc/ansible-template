@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# mise description="Install ansible requirements"
+
+if [ -f requirements.yml ]
+then
+    ansible-galaxy install -r requirements.yml
+fi

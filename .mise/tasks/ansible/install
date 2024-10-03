@@ -3,5 +3,7 @@
 
 if [ -f requirements.yml ]
 then
-    ansible-galaxy install -r requirements.yml
+    ansible-galaxy install \
+        --force \
+        --role-file requirements.yml
 fi
